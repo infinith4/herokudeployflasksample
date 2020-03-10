@@ -14,7 +14,7 @@ pip3 freeze > requirements.txt
 pip3 install -r requirements.txt
 
 
-echo python-3.7.5 > runtime.txt
+echo python-3.7.6 > runtime.txt
 echo web: gunicorn run:app > Procfile  #run is python filename
 wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 heroku login
@@ -24,7 +24,7 @@ heroku --version
 heroku create herokudeployflasksample
 # https://dashboard.heroku.com/apps
 
-git init
+#git init
 heroku git:remote -a herokudeployflasksample
 git add .
 git commit -am "deploy heroku"

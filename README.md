@@ -30,3 +30,5 @@ git add .
 git commit -am "deploy heroku"
 
 git push heroku master
+
+https://herokudeployflasksample.herokuapp.com/
